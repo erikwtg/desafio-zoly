@@ -5,7 +5,7 @@ const routes = Router()
 
 routes.post('/', (request, response) => {
 
-	const { initialNumber, finalNumber } = request.body
+	const { initialNumber = 0, finalNumber = 100 } = request.body
 
 	const fizzBuzzGenerator = generalFunctions.fizzBuzz(initialNumber, finalNumber)
 

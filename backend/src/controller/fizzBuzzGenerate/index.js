@@ -1,8 +1,8 @@
 export default {
-	fizzBuzzGenerate(initialNumber, finalNumber) {
+	fizzBuzz(initialNumber, finalNumber) {
 		const array  = []
 
-		for(let i = a; i < b; i++) {
+		for(let i = initialNumber; i < finalNumber; i++) {
 
 			if (i % 3 == 0 && i % 5 == 0) {
 				array.push("FizzBuzz")
@@ -14,8 +14,6 @@ export default {
 				array.push(i)
 			}
 		}
-
-		array.forEach(ret => console.log(ret))
 
 		return array
 	}
